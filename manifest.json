@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Git extension",
+  "description": "Git extension",
+  "version": "0.0.1",
+  "homepage_url": "https://github.com/LinuxSuRen/git-chrome-extension",
+  "permissions": [
+    "unlimitedStorage",
+    "notifications",
+    "contextMenus"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/*/pull/*", "https://github.com/*/*/pull/*/files"],
+      "run_at": "document_idle",
+      "js": ["github.js"]
+    }
+  ]
+}
