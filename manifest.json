@@ -13,7 +13,11 @@
     {
       "matches": ["https://github.com/*/*/pull/*", "https://github.com/*/*/pull/*/files"],
       "run_at": "document_idle",
-      "js": ["github.js"]
+      "js": ["github-pr.js"]
+    }, {
+      "matches": ["https://github.com/*/*"],
+      "run_at": "document_idle",
+      "js": ["github-repo.js"]
     }
   ]
 }
