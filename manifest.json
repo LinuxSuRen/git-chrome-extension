@@ -18,6 +18,10 @@
       "matches": ["https://github.com/*/*"],
       "run_at": "document_idle",
       "js": ["github-repo.js"]
+    }, {
+      "matches": ["https://github.com/*/*/tree/**"],
+      "run_at": "document_idle",
+      "js": ["github-repo.js"]
     }
   ]
 }
